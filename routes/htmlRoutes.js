@@ -1,13 +1,17 @@
-const router = require("express").Router()
-const path = require("path");
-var express = require("express");
+var path = require("path");
 
-router.get("/exercise", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/exercise.html"));
-});
+module.exports = function(app) {
+    // This is called when New Workout or Continue Workout button is clicked
+    app.get("/exercise", function(req,res) {
+        res.sendFile(path.join(__dirname, "../public/exercise.html"));
+    });
 
-router.get("/stats", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/stats.html"));
-});
+    // GET route for index
+    app.get("/", function(req,res) {
+        res.sendFile(path.join(__dirname, "../public/index.html"));
+    });
 
-module.exports = router;
+    app.get("/stats", function(req,res) {
+        res.sendFile(path.join(__dirname, "../public/stats.html"));
+    });
+}
