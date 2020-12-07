@@ -1,8 +1,8 @@
 # workout-tracker
-![fT3](https://user-images.githubusercontent.com/68441056/101318506-55ce8a80-3815-11eb-848c-8a775a4671b5.JPG)
-![fT4](https://user-images.githubusercontent.com/68441056/101318507-56672100-3815-11eb-989d-8684dcbaff82.JPG)
 ![fT](https://user-images.githubusercontent.com/68441056/101318508-56672100-3815-11eb-8a0e-bf8e435d8cb4.JPG)
 ![fT2](https://user-images.githubusercontent.com/68441056/101318511-56672100-3815-11eb-89dd-4b22ec668059.JPG)
+![fT3](https://user-images.githubusercontent.com/68441056/101318506-55ce8a80-3815-11eb-848c-8a775a4671b5.JPG)
+![fT4](https://user-images.githubusercontent.com/68441056/101318507-56672100-3815-11eb-989d-8684dcbaff82.JPG)
 ## Business Context
 
 A consumer will reach their fitness goals more quickly when they track their workout progress.
