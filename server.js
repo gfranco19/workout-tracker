@@ -10,10 +10,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/WorkoutDB',
   {
@@ -25,10 +21,12 @@ mongoose.connect(
 );
 
 //routes
-const apiRoutes = require("./routes/apiRoutes.js");
-const htmlRoutes = require("./routes/htmlRoutes.js")
+const apiRoutes = require("./routes/apiRoutes");
+const htmlRoutes = require("./routes/htmlRoutes")
 app.use(htmlRoutes);
 app.use(apiRoutes);
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
+
+module.exports = app;
